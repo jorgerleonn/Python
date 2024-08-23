@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
 
+# https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html maybe from this source, I am not sure
 dataset = pd.read_csv('Unsupervised Learning\K-Means Clustering\openpowerlifting.csv')
 
 features = pd.concat([dataset.iloc[:, 1:22], dataset.iloc[:, 24:36]], axis=1)
